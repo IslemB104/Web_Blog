@@ -1,0 +1,220 @@
+<!-- About Section -->
+<section class="about section" id="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="about-content padd-15">
+
+                <div class="row">
+                    <div class="about-text padd-15">
+                        <h3>I'm Islem Bouchaala and a <span>Software Engineer</span></h3>
+                        <p>
+                            Hi, I'm a Software Engineer and have been in this field for more than 4 years. It
+                            feels good to help and solve problems and logic that is applied to
+                            today's technology. Regarding Software Engineers, I have participated in several
+                            training and competitions in the same field. I also contribute with several
+                            organizations and communities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="personal-info padd-15">
+
+                        <div >
+                            
+                            <div class="info-item padd-15">
+                                <p>Age: <span>23</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Email: <span>islem.bouchaala4@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Phone: <span>+216 55860821</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>City: <span>Sfax, Tunisia</span></p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <button (click)="downloadCv()" class="btn">Download CV</button>
+                                <a routerLink="/contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skills padd-15">
+
+                        <div class="row">
+
+                            <div class="skill-item padd-15">
+                                <h5>HTML5</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>JavaScript</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:95%;"></div>
+                                    <div class="skill-percent">95%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>TypeScript</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5>CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:85%;"></div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2021 - 2024
+                                        </h6>
+                                        <h4 class="timeline-title">National School of Electronics and Telecommunications of Sfax</h4>
+                                        <p class="timeline-text">Field: Telecommunications Engineering</p>
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-box padd-15" style="padding-top: 14px;" >
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2019 - 2021
+                                        </h6>
+                                        <h4 class="timeline-title">CLASSES PREPARATOIRE, IPEIS</h4>
+                                        <p class="timeline-text">Field: Mathmatics-Physics</p>
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-box padd-15" style="padding-top: 14px;" >
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2015 - 2019
+                                        </h6>
+                                        <h4 class="timeline-title">Pioneer High School of Sfax</h4>
+                                        <p class="timeline-text">Bachelor's Degree in Mathematics with Honors</p>
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 06/2023-07/2023
+                                        </h6>
+                                        <h4 class="timeline-title">DevOps Internship: Spark-IT</h4>
+                                        <p class="timeline-text">Optimization of software development processes : continuous integration, deployment,
+                                            and orchestration of Stark application.</p>
+
+                                        <!-- Button to view details -->
+                                        <a routerLink="/experience" [queryParams]="{ id: '1' }" class="btn">View Details</a>
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-box padd-15" style="padding-top: 14px;">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 01/2023-04/2023
+                                        </h6>
+                                        <h4 class="timeline-title">Final Year Project: Web Application TunMedCare</h4>
+                                        <p class="timeline-text">Development of a functional online medical application for patients with chronic diseases,
+                                            facilitating their communication with doctors and improving their health management.</p>
+                                            <!-- Button to view details -->
+                                        <a routerLink="/experience" [queryParams]="{ id: '2' }" class="btn">View Details</a>
+
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-box padd-15" style="padding-top: 14px;">
+                                <div class="timeline shadow-dark">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h6 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 06/2022
+                                        </h6>
+                                        <h4 class="timeline-title">Operator Internship: Tunisie Telecom</h4>
+                                        <p class="timeline-text">Operator internship in the Customer Service Center (CSC)</p>
+                                        <!-- Button to view details -->
+                                        <a routerLink="/experience" [queryParams]="{ id: '3' }" class="btn">View Details</a>
+                                    </div>
+                                    <!-- Timeline Item End-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- About Section End-->

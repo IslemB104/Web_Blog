@@ -1,0 +1,40 @@
+<!-- Experience Details Section -->
+<div class="experience-details section" *ngIf="experience; else loading">
+    <div class="container">
+  
+        <div class="section-title padd-15">
+          <h2>{{ experience.title }}</h2>
+          <p><b>{{ experience.description }}</b></p>
+          <p>{{ experience.date }}</p>
+        </div>
+      
+        <div class="experience-details-content padd-15">
+          
+          <div class="row">
+            <div class="experience-details-info padd-15">
+              <div class="info-item padd-15">
+                <p><b>Details:</b></p>
+                <div [innerHTML]="experience.details"></div>
+              </div>
+            </div>
+            
+              <div class="experience-details-skills padd-15">
+                <div class="skill-item padd-15">
+                <p><b>Technologies:</b></p>
+                  <p>{{ experience.technologies }}</p> 
+                  </div>         
+              </div>
+            </div>
+  
+        </div>
+      
+      
+      <div class="buttons padd-15">
+        <!-- Add any additional buttons or actions related to the experience -->
+        <a routerLink="/about" class="btn">Back to Experiences</a>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #loading>Loading...</ng-template>
+  <!-- Experience Details Section End -->

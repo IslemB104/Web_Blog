@@ -1,0 +1,44 @@
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+    <div class="container">
+
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="portfolio-filter padd-15">
+                <button type="button" (click)="filterItems('all')" [class.active]="currentFilter === 'all'">All</button>
+                <button type="button" (click)="filterItems('web-design')" [class.active]="currentFilter === 'web-design'">Web Design</button>
+                <button type="button" (click)="filterItems('devops')" [class.active]="currentFilter === 'devops'">DevOps</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Portfolio Item -->
+            <div  *ngFor="let item of portfolioItems" class="portfolio-item padd-15" [ngClass]="{'web-design': item.category === 'web-design', 'devops': item.category === 'devops'}" >
+                <div *ngIf="shouldDisplayItem(item.category)" >
+                <div class="portfolio-item-inner shadow-dark" >
+                    <div class="portfolio-img">
+                        <img src="{{ item.imageUrl }}" alt="portfolio">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>{{ item.category }}</h4>
+                        <div class="icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item End-->
+        </div>
+
+        
+
+    </div>
+</section>
+<!-- Portfolio Section End-->
